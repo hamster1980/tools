@@ -11,6 +11,7 @@
 	
 	<properties>
 		<spring.version>3.2.2.RELEASE</spring.version>
+		<hibernate.version>3.6.8.Final</hibernate.version>
 	</properties>
 
     <profiles>
@@ -142,6 +143,16 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>3.1</version>
             </dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-entitymanager</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
         </dependencies>
     </dependencyManagement>
 
